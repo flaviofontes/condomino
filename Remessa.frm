@@ -547,7 +547,7 @@ Private Sub cmdGerar_Click()
     sLinha = sLinha & sMen2 '19 - mensagem 2
     sLinha = sLinha & PadLeft(cpSequencia.Text, "0", 8) '20 - NSA número sequencial
     sLinha = sLinha & Format$(cpGeracao.Value, "ddMMyyyy") '21 - data de geração do arquivo
-    sLinha = sLinha & "00000000" '22 - data de crédito
+    sLinha = sLinha & "00000000" '22 - data de crédito do pagamento
     sLinha = sLinha & Space(33) '33 - CNAB - filler
     Print #iFree, sLinha
     numRegArq = numRegArq + 1
